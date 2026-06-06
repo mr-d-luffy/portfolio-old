@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohit Shivankar | Cyber-Network Terminal</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
 
     <style>
         /* === CSS VARIABLES & RESET === */
@@ -54,7 +56,10 @@
         }
 
         /* === GLITCH & TYPOGRAPHY === */
-        h1, h2, h3, .mono {
+        h1,
+        h2,
+        h3,
+        .mono {
             font-family: var(--font-mono);
         }
 
@@ -63,8 +68,15 @@
             letter-spacing: 2px;
         }
 
-        .text-cyan { color: var(--neon-cyan); text-shadow: 0 0 10px rgba(0, 243, 255, 0.5); }
-        .text-purple { color: var(--neon-purple); text-shadow: 0 0 10px rgba(157, 0, 255, 0.5); }
+        .text-cyan {
+            color: var(--neon-cyan);
+            text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+        }
+
+        .text-purple {
+            color: var(--neon-purple);
+            text-shadow: 0 0 10px rgba(157, 0, 255, 0.5);
+        }
 
         .glitch {
             position: relative;
@@ -100,18 +112,52 @@
         }
 
         @keyframes glitch-anim {
-            0% { clip: rect(15px, 9999px, 71px, 0); transform: skew(0.85deg); }
-            10% { clip: rect(12px, 9999px, 89px, 0); transform: skew(0.24deg); }
-            20% { clip: rect(96px, 9999px, 91px, 0); transform: skew(0.01deg); }
-            30% { clip: rect(93px, 9999px, 16px, 0); transform: skew(0.14deg); }
-            100% { clip: rect(4px, 9999px, 69px, 0); transform: skew(0.99deg); }
+            0% {
+                clip: rect(15px, 9999px, 71px, 0);
+                transform: skew(0.85deg);
+            }
+
+            10% {
+                clip: rect(12px, 9999px, 89px, 0);
+                transform: skew(0.24deg);
+            }
+
+            20% {
+                clip: rect(96px, 9999px, 91px, 0);
+                transform: skew(0.01deg);
+            }
+
+            30% {
+                clip: rect(93px, 9999px, 16px, 0);
+                transform: skew(0.14deg);
+            }
+
+            100% {
+                clip: rect(4px, 9999px, 69px, 0);
+                transform: skew(0.99deg);
+            }
         }
 
         @keyframes glitch-anim-2 {
-            0% { clip: rect(65px, 9999px, 100px, 0); transform: skew(0.06deg); }
-            15% { clip: rect(75px, 9999px, 5px, 0); transform: skew(0.18deg); }
-            25% { clip: rect(14px, 9999px, 79px, 0); transform: skew(0.11deg); }
-            100% { clip: rect(59px, 9999px, 34px, 0); transform: skew(0.21deg); }
+            0% {
+                clip: rect(65px, 9999px, 100px, 0);
+                transform: skew(0.06deg);
+            }
+
+            15% {
+                clip: rect(75px, 9999px, 5px, 0);
+                transform: skew(0.18deg);
+            }
+
+            25% {
+                clip: rect(14px, 9999px, 79px, 0);
+                transform: skew(0.11deg);
+            }
+
+            100% {
+                clip: rect(59px, 9999px, 34px, 0);
+                transform: skew(0.21deg);
+            }
         }
 
         /* === NAVIGATION SCHEME === */
@@ -168,8 +214,16 @@
             transition: var(--transition);
         }
 
-        .nav-links a:hover::after { width: 100%; }
-        .hamburger { display: none; cursor: pointer; color: var(--neon-cyan); font-size: 1.4rem; }
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            color: var(--neon-cyan);
+            font-size: 1.4rem;
+        }
 
         /* === LAYOUT STRUCTURE === */
         section {
@@ -203,9 +257,22 @@
             padding-top: 160px;
         }
 
-        .hero-content { flex: 1; }
-        .hero-content h3 { font-size: 1.1rem; margin-bottom: 15px; color: var(--neon-purple); letter-spacing: 2px; }
-        .hero-content h1 { font-size: 3.8rem; margin-bottom: 25px; line-height: 1.1; }
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: var(--neon-purple);
+            letter-spacing: 2px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.8rem;
+            margin-bottom: 25px;
+            line-height: 1.1;
+        }
 
         .typing-container {
             display: flex;
@@ -278,7 +345,10 @@
         .id-card::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background: linear-gradient(to bottom, transparent 50%, rgba(0, 243, 255, 0.03) 50%);
             background-size: 100% 4px;
             pointer-events: none;
@@ -286,7 +356,10 @@
 
         .id-card-hud {
             position: absolute;
-            top: 10px; left: 10px; right: 10px; bottom: 10px;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
             border: 1px solid rgba(0, 243, 255, 0.05);
             pointer-events: none;
             border-radius: 8px;
@@ -320,27 +393,57 @@
             position: relative;
         }
 
-        .id-photo i { font-size: 3.5rem; color: var(--neon-cyan); }
-        
+        .id-photo i {
+            font-size: 3.5rem;
+            color: var(--neon-cyan);
+        }
+
         .id-photo::after {
             content: '';
             position: absolute;
-            width: 100%; height: 2px;
+            width: 100%;
+            height: 2px;
             background: var(--neon-cyan);
             box-shadow: 0 0 8px var(--neon-cyan);
             animation: scan 2s linear infinite;
         }
 
         @keyframes scan {
-            0% { top: 0%; }
-            50% { top: 100%; }
-            100% { top: 0%; }
+            0% {
+                top: 0%;
+            }
+
+            50% {
+                top: 100%;
+            }
+
+            100% {
+                top: 0%;
+            }
         }
 
-        .id-details { width: 100%; transform: translateZ(40px); }
-        .id-row { display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 0.85rem; font-family: var(--font-mono); }
-        .id-label { color: var(--text-muted); }
-        .id-value { color: var(--text-main); font-weight: 600; text-align: right; }
+        .id-details {
+            width: 100%;
+            transform: translateZ(40px);
+        }
+
+        .id-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            font-size: 0.85rem;
+            font-family: var(--font-mono);
+        }
+
+        .id-label {
+            color: var(--text-muted);
+        }
+
+        .id-value {
+            color: var(--text-main);
+            font-weight: 600;
+            text-align: right;
+        }
 
         /* Social Icons replacing barcode */
         .id-socials {
@@ -396,8 +499,10 @@
         .card::before {
             content: '';
             position: absolute;
-            bottom: 0; right: 0;
-            width: 12px; height: 12px;
+            bottom: 0;
+            right: 0;
+            width: 12px;
+            height: 12px;
             background: var(--neon-cyan);
             clip-path: polygon(100% 0, 100% 100%, 0 100%);
             opacity: 0.6;
@@ -423,8 +528,12 @@
             margin-bottom: 25px;
         }
 
-        .tech-stack { display: flex; flex-wrap: wrap; gap: 8px; }
-        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
         .tech-tag {
             font-family: var(--font-mono);
             font-size: 0.75rem;
@@ -436,23 +545,34 @@
         }
 
         /* === DATA CV ARCHITECTURE === */
-        .timeline { position: relative; max-width: 850px; margin: 0 auto; }
-        
+        .timeline {
+            position: relative;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
         .timeline::after {
             content: '';
             position: absolute;
             width: 2px;
             background: linear-gradient(to bottom, var(--neon-purple), var(--neon-cyan), var(--neon-blue));
-            top: 0; bottom: 0; left: 50%;
+            top: 0;
+            bottom: 0;
+            left: 50%;
             margin-left: -1px;
         }
 
-        .timeline-item { padding: 15px 40px; position: relative; width: 50%; }
-        
+        .timeline-item {
+            padding: 15px 40px;
+            position: relative;
+            width: 50%;
+        }
+
         .timeline-item::after {
             content: '';
             position: absolute;
-            width: 12px; height: 12px;
+            width: 12px;
+            height: 12px;
             right: -6px;
             background-color: var(--bg-color);
             border: 2px solid var(--neon-cyan);
@@ -462,9 +582,17 @@
             box-shadow: 0 0 10px var(--neon-cyan);
         }
 
-        .left { left: 0; }
-        .right { left: 50%; }
-        .right::after { left: -6px; }
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .right::after {
+            left: -6px;
+        }
 
         .timeline-content {
             padding: 25px;
@@ -490,36 +618,95 @@
         }
 
         /* === WINDOW REVEALS === */
-        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
-        .reveal.active { opacity: 1; transform: translateY(0); }
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
         /* === SYSTEM RESPONSIVENESS === */
         @media (max-width: 900px) {
-            #home { flex-direction: column; text-align: center; padding-top: 130px; }
-            .id-card-wrapper { margin-top: 50px; }
-            .timeline::after { left: 20px; }
-            .timeline-item { width: 100%; padding-left: 50px; padding-right: 10px; }
-            .timeline-item::after { left: 14px; }
-            .right { left: 0%; }
-            .typing-container { justify-content: center; }
+            #home {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 130px;
+            }
+
+            .id-card-wrapper {
+                margin-top: 50px;
+            }
+
+            .timeline::after {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 10px;
+            }
+
+            .timeline-item::after {
+                left: 14px;
+            }
+
+            .right {
+                left: 0%;
+            }
+
+            .typing-container {
+                justify-content: center;
+            }
         }
 
         @media (max-width: 768px) {
             .nav-links {
-                position: absolute; right: 0; top: 68px;
+                position: absolute;
+                right: 0;
+                top: 68px;
                 background: rgba(4, 5, 15, 0.95);
-                flex-direction: column; width: 100%;
-                text-align: center; padding: 30px 0;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                padding: 30px 0;
                 transform: translateY(-160%);
                 transition: transform 0.4s ease;
                 border-bottom: 1px solid var(--neon-cyan);
                 gap: 20px;
             }
-            .nav-links.active { transform: translateY(0); }
-            .hamburger { display: block; }
-            .hero-content h1 { font-size: 2.6rem; }
-            section { padding: 80px 6%; }
+
+            .nav-links.active {
+                transform: translateY(0);
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .hero-content h1 {
+                font-size: 2.6rem;
+            }
+
+            section {
+                padding: 80px 6%;
+            }
         }
     </style>
 </head>
@@ -549,9 +736,11 @@
                 <span class="typing-text"></span><span class="cursor"></span>
             </div>
             <p style="color: var(--text-muted); margin-bottom: 35px; max-width: 540px;">
-                Operating at the intersection of data topology, localized cross-platform structures, and defensive modern network security operations.
+                Operating at the intersection of data topology, localized cross-platform structures, and defensive
+                modern network security operations.
             </p>
-            <a href="#projects" class="btn">Map Projects Axis <i class="fas fa-project-diagram" style="margin-left: 10px;"></i></a>
+            <a href="#projects" class="btn">Map Projects Axis <i class="fas fa-project-diagram"
+                    style="margin-left: 10px;"></i></a>
         </div>
 
         <div class="id-card-wrapper reveal">
@@ -560,6 +749,7 @@
                 <div class="id-header">NEXUS SYSTEM ACCESS ID</div>
                 <div class="id-photo"><i class="fas fa-fingerprint"></i></div>
                 <div class="id-details">
+<<<<<<< HEAD
                     <div class="id-row"><span class="id-label">IDENTITY:</span><span class="id-value">Mohit Shivankar</span></div>
                     <div class="id-row"><span class="id-label">CORE_DEPT:</span><span class="id-value text-cyan">Data Science</span></div>
                     <div class="id-row"><span class="id-label">PRIVILEGE:</span><span class="id-value">Level 4 (Admin)</span></div>
@@ -572,6 +762,25 @@
                     <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#" target="_blank" aria-label="X"><i class="fab fa-x"></i></a>
+=======
+                    <div class="id-row"><span class="id-label">IDENTITY:</span><span class="id-value">Mohit
+                            Shivankar</span></div>
+                    <div class="id-row"><span class="id-label">CORE_DEPT:</span><span class="id-value text-cyan">Data
+                            Science</span></div>
+                    <div class="id-row"><span class="id-label">PRIVILEGE:</span><span class="id-value">Level 4
+                            Admin</span></div>
+                    <div class="id-row"><span class="id-label">REGISTRY:</span><span
+                            class="id-value">RTMNU_ACTIVE</span></div>
+                    <div class="id-row"><span class="id-label">DEVICE_ID:</span><span class="id-value">mr.silicon</span>
+                    </div>
+                </div>
+                <div class="id-socials">
+                    <center>
+                        <a href="https://www.instagram.com/code_x_pro1/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/mr-d-luffy" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mohit-shivankar-a87964340/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+>>>>>>> 53bb0e3 (update site with file Addition)
                     </center>
                 </div>
             </div>
@@ -584,14 +793,17 @@
             <div class="card" style="grid-column: 1 / -1;">
                 <div class="card-icon"><i class="fas fa-brain"></i></div>
                 <h3 class="text-cyan">Integrated Bandwidth</h3>
-                <p>Currently synthesizing systemic analytical paradigms pursuing a B.Sc. in Data Science at Rashtrasant Tukadoji Maharaj Nagpur University (RTMNU).</p>
-                <p>Specialized toolsets include compiling state-managed hybrid architectural systems via Flutter and Dart, engineering Python backend configurations, and executing modern perimeter penetration validation metrics through Kali Linux environments.</p>
+                <p>Currently synthesizing systemic analytical paradigms pursuing a B.Sc. in Data Science at Rashtrasant
+                    Tukadoji Maharaj Nagpur University (RTMNU).</p>
+                <p>Specialized toolsets include compiling state-managed hybrid architectural systems via Flutter and
+                    Dart, engineering Python backend configurations, and executing modern perimeter penetration
+                    validation metrics through Kali Linux environments.</p>
                 <div class="tech-stack" style="margin-top: 25px;">
                     <span class="tech-tag">Python</span>
                     <span class="tech-tag">Flutter / Dart</span>
                     <span class="tech-tag">Data Topologies</span>
                     <span class="tech-tag">Network Auditing</span>
-                    <span class="tech-tag">Kali Suite</span>
+                    <span class="tech-tag">Kali Linux</span>
                     <span class="tech-tag">SQLite3 Hubs</span>
                 </div>
             </div>
@@ -604,7 +816,8 @@
             <div class="card reveal">
                 <div class="card-icon"><i class="fas fa-terminal"></i></div>
                 <h3>Mobile Pen-Testing Suite</h3>
-                <p>Hybrid network telemetry and analysis suite deployed onto mobile operating systems. Designed to facilitate localized port discovery, protocol mapping, and target vulnerability indexing.</p>
+                <p>Hybrid network telemetry and analysis suite deployed onto mobile operating systems. Designed to
+                    facilitate localized port discovery, protocol mapping, and target vulnerability indexing.</p>
                 <div class="tech-stack">
                     <span class="tech-tag">Flutter</span>
                     <span class="tech-tag">Python Core</span>
@@ -615,7 +828,8 @@
             <div class="card reveal">
                 <div class="card-icon"><i class="fas fa-server"></i></div>
                 <h3>Library Directory Engine</h3>
-                <p>Asset containment and catalog software implementing relational transactional operations through lightweight embedded query engines and data verification layers.</p>
+                <p>Asset containment and catalog software implementing relational transactional operations through
+                    lightweight embedded query engines and data verification layers.</p>
                 <div class="tech-stack">
                     <span class="tech-tag">Python</span>
                     <span class="tech-tag">JSON Schema</span>
@@ -626,7 +840,8 @@
             <div class="card reveal">
                 <div class="card-icon"><i class="fas fa-car-battery"></i></div>
                 <h3>Automobile Matrix Report</h3>
-                <p>Industrial technical analysis detailing manufacturing architecture configurations and software-integrated operational platforms mapped during local factory audits.</p>
+                <p>Industrial technical analysis detailing manufacturing architecture configurations and
+                    software-integrated operational platforms mapped during local factory audits.</p>
                 <div class="tech-stack">
                     <span class="tech-tag">Data Logging</span>
                     <span class="tech-tag">System Audits</span>
@@ -641,22 +856,32 @@
             <div class="card reveal">
                 <div class="card-icon"><i class="fas fa-user-shield"></i></div>
                 <h3>Cybersecurity Frameworks</h3>
-                <p>Validation of perimeter security concepts, cryptography vectors, and structural surface assessment patterns.</p>
-                <a href="#" class="text-cyan mono" style="text-decoration: none; font-size: 0.85rem;">[FETCH_LOG]</a>
+                <p>Validation of perimeter security concepts, cryptography vectors, and structural surface assessment
+                    patterns.</p>
+                <a href="images/RNhbu8QnDzthwynEf_M6JGAwZ52SMusMEcK_68d2ddf845ff19071c829927_1760207461327_completion_certificate.pdf" class="text-cyan mono" style="text-decoration: none; font-size: 0.85rem;">[FETCH_LOG]</a>
+            </div>
+
+            <div class="card reveal">
+                <div class="card-icon"><i class="fas fa-layer-group"></i></div>
+                <h3>Advanced Prompt Engineering</h3>
+                <p>Certification In Advance Prompt Engineering From IIT Bombay.</p>
+                <a href="images/43825f18-f733-11f0-9311-dd964918d4b0.pdf" class="text-cyan mono" style="text-decoration: none; font-size: 0.85rem;">[FETCH_LOG]</a>
             </div>
 
             <div class="card reveal">
                 <div class="card-icon"><i class="fas fa-layer-group"></i></div>
                 <h3>Advanced Flutter Paradigms</h3>
-                <p>Telemetry mapping state controllers, local database caching strategies, and fluid user interface builds.</p>
+                <p>Telemetry mapping state controllers, local database caching strategies, and fluid user interface
+                    builds.</p>
                 <a href="#" class="text-cyan mono" style="text-decoration: none; font-size: 0.85rem;">[FETCH_LOG]</a>
             </div>
 
             <div class="card reveal">
                 <div class="card-icon"><i class="fas fa-chart-line"></i></div>
                 <h3>Data Topography Analytics</h3>
-                <p>Certification of structural mathematical calculations, information classification metrics, and algorithmic modeling models.</p>
-                <a href="#" class="text-cyan mono" style="text-decoration: none; font-size: 0.85rem;">[FETCH_LOG]</a>
+                <p>Certification of structural mathematical calculations, information classification metrics, and
+                    algorithmic modeling models.</p>
+                <a href="images/NjynCWzGSaWXQCxSX_tMjbs76F526fF5v3G_68d2ddf845ff19071c829927_1765560189951_completion_certificate.pdf" class="text-cyan mono" style="text-decoration: none; font-size: 0.85rem;">[FETCH_LOG]</a>
             </div>
         </div>
     </section>
@@ -669,7 +894,8 @@
                     <span class="timeline-date">RUNNING_CLOCK // PRESENT</span>
                     <h3 class="text-cyan">B.Sc. Data Science Track</h3>
                     <p class="text-muted">RTMNU Ecosystem</p>
-                    <p>Processing relational logic components, data structuring, and foundational core computational elements while piloting distributed software modules.</p>
+                    <p>Processing relational logic components, data structuring, and foundational core computational
+                        elements while piloting distributed software modules.</p>
                 </div>
             </div>
             <div class="timeline-item right reveal">
@@ -677,7 +903,8 @@
                     <span class="timeline-date">LOGGED // RECENT</span>
                     <h3>HackOn 2.0 Hackathon</h3>
                     <p class="text-muted">GDG Platform Axis</p>
-                    <p>Designed application prototypes aligning structural cross-compilation layers to target interface criteria under tight runtime deadlines.</p>
+                    <p>Designed application prototypes aligning structural cross-compilation layers to target interface
+                        criteria under tight runtime deadlines.</p>
                 </div>
             </div>
             <div class="timeline-item left reveal">
@@ -685,17 +912,20 @@
                     <span class="timeline-date">ARCHIVED // RECENT</span>
                     <h3>Autonomous Software Buildout</h3>
                     <p class="text-muted">Independent Node Operations</p>
-                    <p>Assembled custom application profiles, local transactional frameworks, and data tracking layers using cleanly encapsulated models.</p>
+                    <p>Assembled custom application profiles, local transactional frameworks, and data tracking layers
+                        using cleanly encapsulated models.</p>
                 </div>
             </div>
         </div>
 
         <div style="text-align: center; margin-top: 60px;" class="reveal">
-            <a href="#" class="btn" onclick="alert('Downloading dataset bundle...')"><i class="fas fa-file-download" style="margin-right: 10px;"></i> PULL FULL LOGS (CV).PDF</a>
+            <a href="#" class="btn" onclick="alert('Downloading dataset bundle...')"><i class="fas fa-file-download"
+                    style="margin-right: 10px;"></i> PULL FULL LOGS (CV).PDF</a>
         </div>
     </section>
 
-    <footer style="text-align: center; padding: 40px; border-top: 1px solid rgba(0, 243, 255, 0.15); background: var(--bg-darker); font-family: var(--font-mono); font-size: 0.85rem;">
+    <footer
+        style="text-align: center; padding: 40px; border-top: 1px solid rgba(0, 243, 255, 0.15); background: var(--bg-darker); font-family: var(--font-mono); font-size: 0.85rem;">
         <p class="text-cyan">COMMUNICATION_LINK_CLOSED <i class="fas fa-network-wired"></i></p>
         <p style="color: var(--text-muted); margin-top: 12px;">&copy; 2026 Mohit Shivankar. Node Integrity Verified.</p>
     </footer>
@@ -891,3 +1121,5 @@
 </body>
 
 </html>
+
+
